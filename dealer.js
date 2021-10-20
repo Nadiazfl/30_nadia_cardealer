@@ -187,8 +187,8 @@ function update()
 	$('#amount').text('$ '+ amount);
 }
 
-$(
-  function () {
+ $(
+	function() {
     makeAllCarBrandsDroppable();
     newClient();
     makeExitDroppable();
