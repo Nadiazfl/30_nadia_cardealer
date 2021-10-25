@@ -43,6 +43,9 @@ function makeAllCarBrandsDroppable() {
 function makeCarBoxesDroppable(brand) {
   var smallBrand = brand.toLowerCase();
   var $carBoxes = $("#" + smallBrand + " .car");
+	console.log("#" + smallBrand + " .car");
+		console.log($carBoxes.html());
+	
   var options = {
     accept: '.choice_' + brand,
     drop: function (e, ui) {
