@@ -13,7 +13,7 @@ function newClient() {
   var client = Math.floor((Math.random() * 10) + 1);
   if (count < 5) {
 	  var brandName = brandlist[preference];
-	  $("#clients_queue").append('div class="client client_'+brandName+'"><span class="preference">Client for '+brandlist[preference]+'</span></div>');
+	  $("#clients_queue").append('<div class="client client_'+brandName+'"><span class="preference">Client for '+brandlist[preference]+'</span></div>');
 	  setTimeout(function(){newClient();},time);
     	count++;
 
